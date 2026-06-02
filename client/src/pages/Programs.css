@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500&display=swap");
+
+#root {
+  background-image: none;
+  background-color: #040d18;
+  height: auto;
+  min-height: 100vh;
+}
+
+main {
+  background-color: #040d18;
+  min-height: 100vh;
+  padding: 2rem 4rem;
+}
+
+h1 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 48px;
+  color: #cffafe;
+  letter-spacing: 2px;
+  margin-bottom: 2rem;
+}
+
+.programs-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.program-card {
+  background-color: #071e38;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 0.5px solid rgba(103, 232, 249, 0.1);
+  transition: transform 0.2s;
+}
+
+.program-card:hover {
+  transform: translateY(-4px);
+}
+
+.program-card img {
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+  display: block;
+  max-height: 300px;
+}
+
+.program-card-body {
+  padding: 0.75rem;
+}
+
+.program-card-body h2 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 18px;
+  color: #cffafe;
+  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
+}
+
+.program-card-body p {
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  color: #67e8f9;
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  line-clamp: 4;
+  overflow: hidden;
+}
+
+.program-meta {
+  font-family: "Inter", sans-serif;
+  font-size: 11px;
+  color: #2a5a7a;
+}
