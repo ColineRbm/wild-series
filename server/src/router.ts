@@ -26,6 +26,12 @@ import categoryActions from "./modules/category/categoryActions";
 
 router.get("/api/categories", categoryActions.browse);
 router.get("/api/categories/:id", categoryActions.read);
+router.put(
+  "/api/categories/:id",
+  categoryActions.validate,
+  categoryActions.edit,
+);
+router.post("/api/categories", categoryActions.validate, categoryActions.add);
 
 // Declaration of a "Welcome" route
 
